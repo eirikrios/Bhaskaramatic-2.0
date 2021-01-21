@@ -1,0 +1,91 @@
+<html>
+<head>
+<script type="text/javascript" src="calc.js"></script> 
+</head>
+</html>
+
+<title>Bhaskaramatic</title>
+
+<style>
+
+body, html {
+margin: 0mm;
+background-color: rgb(250, 230, 204);
+color: darkblue;
+font-family: cursive;
+
+
+}
+.image {
+color: rgb(255, 174, 0);
+background-color: rgb(22, 68, 136);	
+font-size:180%;
+margin-bottom: 0mm;
+
+}
+h2 {
+font-size:250%;
+}
+input {
+height:35;
+width: 50;
+font-size:58%;
+text-align:center;
+background-color: rgb(250, 229, 204);
+border-width: 0px;
+color: darkblue;
+font-family: cursive;
+
+
+}
+#lousa{
+    background-color: rgb(250, 230, 204);
+    color: darkblue;
+    font-family: cursive;
+}
+::-webkit-input-placeholder {
+   color: darkblue;
+}
+
+</style>
+
+<body onload="respond()">
+
+    <div class="image">
+        <h1>
+        <Center>
+        Bhaskaramatic
+        </Center>
+        </h1>
+    </div>
+
+
+    <div>
+        <form name="forms">
+        <div class="forms">
+            <h2>
+            <center>
+                <input type="text" id="a" name="a" oninput="respond(),aumenta()" placeholder="A" size="1"/>
+                x²
+
+                <input type="text" id="b" name="b" oninput="respond(),aumenta()" placeholder="B" size="1"/>
+                x
+
+                <input type="text" id="c" name="c" oninput="respond(),aumenta()" placeholder="C" size="1"/>
+                = 
+                <input type="text" id="igual" name="igual" oninput="respond(),aumenta()" placeholder="0" size="1"/>
+                
+
+            </center>
+            </h2>
+        </div>
+        </form>
+        <div>
+            <form name="resp">
+            <center>
+                <textarea id="lousa" name="lousa" readonly='true' style="width: 10cm; height: 60%;text-align: initial;border-width: 0px;font-size: 24px;outline: 0mm;margin-top: 20px;"></textarea>
+            </center>
+            </form>
+        </div>
+    </div>
+</body>
